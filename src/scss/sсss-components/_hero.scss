@@ -1,0 +1,535 @@
+.hero {
+    width: 100%;
+    min-height: 850px;
+    background:
+        image-set(
+            url("./../../img/hero@2x.jpg") 2x,
+            url("./../../img/hero.jpg") 1x
+        )
+        center no-repeat;
+    background-size: cover;
+    background-color: rgba(40, 40, 40, 0.4);
+    background-blend-mode: multiply;
+
+    @include _1170 {
+        min-height: vw(850);
+    }
+
+    @include _768 {
+        min-height: vw2(568);
+    }
+
+    @include _375 {
+        min-height: vmin(648);
+    }
+}
+
+.container_hero {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    max-width: 1139px;
+
+    @include _1170 {
+        padding-left: vw(25);
+        max-width: vw(1139);
+    }
+
+    @include _768 {
+        padding: 0 vw2(15);
+        max-width: vw2(576);
+    }
+
+    @include _375 {
+        padding: 0 vmin(15);
+        max-width: vmin(300);
+    }
+}
+
+/* .hero__top-wrapper-start */
+
+.hero__top-wrapper {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-top: 210px;
+    min-height: 278px;
+
+    @include _1170 {
+        margin-top: vw(211);
+        min-height: vw(278);
+    }
+
+    @include _768 {
+        display: flex;
+        flex-direction: column;
+        margin-top: vw2(163);
+        min-height: vw2(190);
+    }
+
+    @include _375 {
+        margin-top: vmin(137);
+        min-height: vmin(287);
+    }
+}
+
+.hero__left-wrapper {
+    @include _768 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hero__title {
+    margin: 0;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    max-width: 987px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: $white-main;
+
+    @include _1170 {
+        padding-top: vw(28);
+        padding-bottom: vw(30);
+        max-width: vw(987);
+        font-size: vw(60);
+        line-height: vw(60);
+    }
+
+    @include _768 {
+        padding-top: 0;
+        padding-bottom: vw2(21);
+        max-width: vw2(576);
+        font-size: vw2(35);
+        line-height: vw2(40);
+    }
+
+    @include _375 {
+        padding-bottom: vmin(17);
+        max-width: vmin(279);
+        font-size: vmin(40);
+        line-height: vmin(40);
+    }
+}
+
+.hero__text {
+    margin: 0;
+    padding-bottom: 42px;
+    max-width: 424px;
+    font-size: 20px;
+    line-height: 30px;
+    text-shadow: 1px 0 0 $black-main;
+    color: $white-main;
+
+    @include _1170 {
+        padding-bottom: vw(41);
+        max-width: vw(424);
+        font-size: vw(20);
+        line-height: vw(30);
+    }
+
+    @include _768 {
+        padding-bottom: vw2(29);
+        max-width: vw2(424);
+        font-size: vw2(16);
+        line-height: vw2(25);
+        text-align: center;
+    }
+
+    @include _375 {
+        padding-bottom: vmin(23);
+        max-width: vmin(424);
+        font-size: vmin(16);
+        line-height: vmin(25);
+    }
+}
+
+.hero__button {
+    @include _1170 {
+        border-radius: vw(40);
+        padding: vw(16) vw(35);
+        font-size: vw(20);
+    }
+
+    @include _768 {
+        padding: vw2(17) vw2(35);
+        font-size: vw2(16);
+    }
+
+    @include _375 {
+        border-radius: vmin(40);
+        padding: vmin(17) vmin(35);
+        font-size: vmin(16);
+    }
+}
+
+.hero__social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20px;
+
+    @include _1170 {
+        max-width: vw(20);
+    }
+
+    @include _768 {
+        display: none;
+    }
+}
+
+.hero__social-link {
+    display: inline-block;
+    width: 16.67px;
+    height: 16.67px;
+
+    @include _1170 {
+        width: vw(16.67);
+        height: vw(16.67);
+    }
+}
+
+.hero__social-dec-element {
+    display: inline-block;
+    margin: 11.67px 0;
+    width: 1px;
+    height: 20px;
+    background-color: $white-main;
+
+    &:first-of-type {
+        margin-top: 0;
+        height: 40px;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+        height: 40px;
+    }
+
+    @include _1170 {
+        margin: vw(11.67) 0;
+        width: vw(1);
+        height: vw(20);
+
+        &:first-of-type {
+            height: vw(40);
+        }
+
+        &:last-of-type {
+            height: vw(40);
+        }
+    }
+}
+
+/* .hero__top-wrapper-end */
+
+/* hero__bottom-wrapper-start */
+
+.hero__bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 138px;
+
+    @include _1170 {
+        padding-top: vw(136);
+    }
+
+    @include _768 {
+        align-items: center;
+        padding-top: vw2(91);
+    }
+
+    @include _375 {
+        padding-top: vmin(101);
+    }
+}
+
+.hero__cards {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    padding-right: 18px;
+    width: 100%;
+    max-width: 507px;
+
+    @include _1170 {
+        padding-right: vw(15);
+        max-width: vw(509);
+    }
+
+    @include _768 {
+        align-self: center;
+        padding-right: vw2(18);
+        padding-bottom: vw2(37);
+        max-width: vw2(507);
+    }
+
+    @include _375 {
+        padding-right: 0;
+        padding-bottom: vmin(15);
+        max-width: vmin(306);
+    }
+}
+
+.hero__address-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 85px;
+    max-width: 172px;
+
+    @include _1170 {
+        min-height: vw(85);
+        max-width: vw(172);
+    }
+
+    @include _768 {
+        min-height: vw2(85);
+        max-width: vw2(172);
+    }
+
+    @include _375 {
+        min-height: vmin(85);
+        max-width: vmin(120);
+    }
+}
+
+.hero__card-pin {
+    width: 22.5px;
+    height: 27.16px;
+
+    @include _1170 {
+        width: vw(22.5);
+        height: vw(27.16);
+    }
+
+    @include _768 {
+        width: vw2(22.5);
+        height: vw2(27.16);
+    }
+
+    @include _375 {
+        width: vmin(22.5);
+        height: vmin(27.16);
+    }
+}
+
+.hero__card-text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: $white-main;
+
+    @include _1170 {
+        font-size: vw(16);
+        line-height: vw(19);
+    }
+
+    @include _768 {
+        font-size: vw2(16);
+        line-height: vw2(19);
+    }
+
+    @include _375 {
+        font-size: vmin(16);
+        line-height: vmin(19);
+    }
+}
+
+.card-text-br {
+    display: none;
+
+    @include _375 {
+        display: inline;
+    }
+}
+
+.hero__desktop-text {
+    @include _375 {
+        display: none;
+    }
+}
+
+.hero__work-time-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 85px;
+    max-width: 110px;
+
+    @include _1170 {
+        min-height: vw(85);
+        max-width: vw(110);
+    }
+
+    @include _768 {
+        min-height: vw2(85);
+        max-width: vw2(110);
+    }
+
+    @include _375 {
+        min-height: vmin(85);
+        max-width: vmin(110);
+    }
+}
+
+.hero__card-clock {
+    width: 25px;
+    height: 25px;
+
+    @include _1170 {
+        width: vw(25);
+        height: vw(25);
+    }
+
+    @include _768 {
+        width: vw2(25);
+        height: vw2(25);
+    }
+
+    @include _375 {
+        width: vmin(25);
+        height: vmin(25);
+    }
+}
+
+.hero__tel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 85px;
+    max-width: 125px;
+
+    @include _1170 {
+        min-height: vw(85);
+        max-width: vw(125);
+    }
+
+    @include _768 {
+        min-height: vw2(85);
+        max-width: vw2(125);
+    }
+
+    @include _375 {
+        display: none;
+    }
+}
+
+.hero__card-phone {
+    margin-top: 2px;
+    width: 22.5px;
+    height: 22.5px;
+
+    @include _1170 {
+        margin-top: vw(2);
+        width: vw(22.5);
+        height: vw(22.5);
+    }
+
+    @include _768 {
+        margin-top: vw2(2);
+        width: vw2(22.5);
+        height: vw2(22.5);
+    }
+}
+
+.hero__card-tel-numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__card-tel-number {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: $white-main;
+
+    @include _1170 {
+        font-size: vw(16);
+        line-height: vw(19);
+    }
+
+    @include _768 {
+        font-size: vw2(16);
+        line-height: vw2(19);
+    }
+}
+
+.hero__arrow {
+    margin-top: 68px;
+    margin-bottom: 31px;
+    margin-left: 20px;
+    width: 18px;
+    height: 40px;
+    animation: arrow-animation 6s ease infinite;
+
+    @include _1170 {
+        margin-top: vw(70);
+        margin-bottom: vw(31);
+        margin-left: vw(20);
+        width: vw(18);
+        height: vw(40);
+    }
+
+    @include _768 {
+        display: none;
+    }
+}
+
+@keyframes arrow-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    15% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(0, 10px);
+
+        @include _1170 {
+            transform: translate(0, vw(10));
+        }
+    }
+
+    25% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, 10px);
+
+        @include _1170 {
+            transform: translate(0, vw(10));
+        }
+    }
+
+    35% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.hero__arrow-mobile {
+    display: none;
+
+    @include _375 {
+        display: inline-block;
+        margin-bottom: vmin(11);
+        width: vmin(29);
+        height: vmin(10);
+    }
+}
+
+/* hero__bottom-wrapper-end */

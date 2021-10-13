@@ -79,7 +79,7 @@
         position: fixed;
         left: (-200vw);
         top: 0;
-        z-index: 2;
+        z-index: 10;
         height: 100vh;
         max-width: 100%;
         background-color: $white-main;
@@ -107,6 +107,11 @@
     }
 }
 
+.scroll-hidden {
+    overflow: hidden;
+    max-height: 100vh;
+}
+
 .nav__list-item {
     padding: 37px 0;
 
@@ -126,8 +131,13 @@
     text-decoration: none;
     color: $white-main;
 
+    &:visited {
+        text-shadow: 1px 0 0 currentColor;
+    }
+
     &:hover {
-        text-decoration: underline;
+        text-shadow: 1px 0 0 $yellow-main;
+        color: $yellow-main;
     }
 
     @include _1170 {
@@ -154,7 +164,7 @@
         position: absolute;
         right: vmin(20);
         top: vmin(20);
-        z-index: 2;
+        z-index: 10;
         display: inline-block;
         width: vmin(30);
         height: vmin(30);
