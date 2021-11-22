@@ -53,6 +53,7 @@ const styles = () => {
             }
             ]
         }))
+        /* .pipe(sassMigrator) */
         .pipe(gulpif(!isProd, sourcemaps.init()))
         .pipe(sass().on("error", notify.onError()))
         .pipe(autoprefixer({
@@ -66,12 +67,18 @@ const styles = () => {
 };
 
 const scripts = () => {
-    src('./src/js/vendor/**.js')
+    src('./src/js/vendor/**.js',
+        './src/js/vendor.js')
         .pipe(webpackStream({
             mode: 'development',
             output: {
                 filename: 'vendor.js',
-            }
+            },
+            module: {
+                rules: [{
+                    test: /\.m?js$/,
+                }]
+            },
         }))
         .on('error', function (err) {
             console.error('WEBPACK ERROR', err);
@@ -83,12 +90,17 @@ const scripts = () => {
     return src(
         ['./src/js/**.js',
         './src/js/js-components/**.js'])
-
         .pipe(webpackStream({
 			mode: 'development',
 			output: {
 				filename: 'main.js',
 			},
+            module: {
+                rules: [{
+                  test: /\.m?js$/,
+                  exclude: /(node_modules)/,
+                }]
+              },
 		}))
 		.on('error', function (err) {
 			console.error('WEBPACK ERROR', err);

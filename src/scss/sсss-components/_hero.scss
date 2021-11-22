@@ -147,25 +147,6 @@
     }
 }
 
-.hero__button {
-    @include _1170 {
-        border-radius: vw(40);
-        padding: vw(16) vw(35);
-        font-size: vw(20);
-    }
-
-    @include _768 {
-        padding: vw2(17) vw2(35);
-        font-size: vw2(16);
-    }
-
-    @include _375 {
-        border-radius: vmin(40);
-        padding: vmin(17) vmin(35);
-        font-size: vmin(16);
-    }
-}
-
 .hero__social-links {
     display: flex;
     flex-direction: column;

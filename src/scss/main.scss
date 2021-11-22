@@ -24,24 +24,6 @@ body {
 .logo {
     width: 81px;
     height: 27px;
-
-    @include _1170 {
-        width: vw(81);
-        height: vw(27);
-    }
-
-    @include _768 {
-        width: vw2(64);
-        height: vw2(20);
-    }
-
-    @include _375 {
-        position: absolute;
-        left: 50%;
-        width: vmin(64);
-        height: vmin(20);
-        transform: translate(-50%, 0);
-    }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -87,6 +69,90 @@ body {
         color: $yellow-main;
         background-color: $white-main;
     }
+
+    @include _1170 {
+        border-radius: vw(40);
+        padding: vw(16) vw(35);
+        font-size: vw(20);
+    }
+
+    @include _768 {
+        padding: vw2(17) vw2(35);
+        font-size: vw2(16);
+    }
+
+    @include _375 {
+        border-radius: vmin(40);
+        padding: vmin(17) vmin(35);
+        font-size: vmin(16);
+    }
+}
+
+.section-title {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 70px;
+    color: $black-main;
+}
+
+.section-number {
+    font-weight: 400;
+    font-size: 70px;
+    color: $grey-main;
+}
+
+.swiper > * {
+    box-sizing: border-box;
+}
+
+.swiper-slide__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    position: static;
+    width: 70px;
+    font-weight: 400;
+    font-size: 35px;
+    color: $grey-main;
+}
+
+.swiper-pagination-current {
+    font-weight: 400;
+    font-size: 45px;
+    color: $yellow-main;
+}
+
+.swiper-pagination-total {
+    font-size: 35px;
+}
+
+.swiper-button-prev {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    width: 40px;
+    height: 18px;
+    background: transparent;
+
+    &::after {
+        content: none;
+    }
+}
+
+.swiper-button-next {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    width: 40px;
+    height: 18px;
+    background: transparent;
+
+    &::after {
+        content: none;
+    }
 }
 
 .visually-hidden {
@@ -101,5 +167,6 @@ body {
 
 @import "./sсss-components/header";
 @import "./sсss-components/hero";
+@import "./sсss-components/services";
 @import "./sсss-components/footer";
 @import "media";

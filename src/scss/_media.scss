@@ -1,0 +1,98 @@
+.logo {
+    @include _1170 {
+        width: vw(81);
+        height: vw(27);
+    }
+
+    @include _768 {
+        width: vw2(64);
+        height: vw2(20);
+    }
+
+    @include _375 {
+        position: absolute;
+        left: 50%;
+        width: vmin(64);
+        height: vmin(20);
+        transform: translate(-50%, 0);
+    }
+}
+
+.section-title {
+    @include _1170 {
+        font-size: vw(70);
+        line-height: vw(70);
+    }
+
+    @include _375 {
+        font-weight: 700;
+        font-size: vmin(30);
+        line-height: vmin(50);
+    }
+}
+
+.section-number {
+    @include _1170 {
+        font-size: vw(70);
+    }
+
+    @include _768 {
+        display: none;
+    }
+}
+
+.swiper-pagination {
+    @include _1170 {
+        width: vw(70);
+        font-size: vw(35);
+    }
+
+    @include _768 {
+        width: vw2(60);
+        font-size: vw2(28);
+    }
+}
+
+.swiper-pagination-current {
+    @include _1170 {
+        font-size: vw(45);
+    }
+
+    @include _768 {
+        font-size: vw2(28);
+    }
+}
+
+.swiper-pagination-total {
+    @include _1170 {
+        font-size: vw(35);
+    }
+
+    @include _768 {
+        font-size: vw2(18);
+    }
+}
+
+.swiper-button-prev {
+    @include _1170 {
+        width: vw(40);
+        height: vw(18);
+    }
+
+    @include _768 {
+        width: vw2(24);
+        height: vw2(28);
+    }
+}
+
+.swiper-button-next {
+    @include _1170 {
+        width: vw(40);
+        height: vw(18);
+    }
+
+    @include _768 {
+        width: vw2(24);
+        height: vw2(28);
+    }
+}
