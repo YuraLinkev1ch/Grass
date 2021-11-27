@@ -1,0 +1,311 @@
+.benefits {
+    width: 100%;
+    background-color: $background-dark;
+}
+
+.container_benefits {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 328px 554px;
+    padding: 88px 15px 83px;
+    padding-right: 60px;
+    max-width: 1027px;
+    color: $white-main;
+
+    @include _1170 {
+        grid-template-columns: vw(328) vw(554);
+        padding: vw(88) vw(15) vw(83);
+        padding-right: vw(60);
+        max-width: vw(1027);
+    }
+
+    @include _768 {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(vw2(100) auto)  minmax(vw2(553) auto);
+        padding: vw2(41) vw2(47) vw2(24);
+    }
+
+    @include _375 {
+        display: block;
+        padding: vmin(21) vmin(51) vmin(42) vmin(38);
+    }
+}
+
+/* left-wrapper-start */
+
+.benefits__left-wrapper {
+    @include _768 {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: vw2(350) vw2(293);
+        padding-right: vw2(4);
+        padding-left: vw2(3);
+    }
+
+    @include _375 {
+        display: block;
+        padding: 0;
+    }
+}
+
+.benefits__section-number {
+    position: relative;
+    padding-bottom: 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: -40px;
+        display: inline-block;
+        width: 0.5px;
+        height: 200px;
+        background-color: $yellow-main;
+
+        @include _1170 {
+            left: vw(-30);
+            top: vw(-40);
+            width: vw(0.5);
+            height: vw(200);
+        }
+    }
+
+    @include _1170 {
+        padding-bottom: vw(30);
+    }
+}
+
+.benefits__section-title {
+    color: $white-main;
+}
+
+.benefits__subtitle {
+    margin: 0;
+    padding-top: 137px;
+    max-width: 242px;
+    font-size: 30px;
+    line-height: 50px;
+    color: $grey1;
+
+    @include _1170 {
+        padding-top: vw(137);
+        max-width: vw(242);
+        font-size: vw(30);
+        line-height: vw(50);
+    }
+
+    @include _768 {
+        padding-top: vw2(3);
+        max-width: vw2(275);
+        font-size: vw2(22);
+        line-height: vw2(30);
+    }
+
+    @include _375 {
+        display: none;
+    }
+}
+
+/* left-wrapper-end */
+
+/* right-wrapper-start */
+
+.benefits__right-wrapper {
+    display: grid;
+    grid-template-columns: 554px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+
+    @include _1170 {
+        grid-template-columns: vw(554);
+        padding-top: vw(20);
+    }
+
+    @include _768 {
+        grid-column-gap: vw2(54);
+        grid-template-columns: vw2(324) vw2(298);
+        padding-top: vw2(33);
+    }
+
+    @include _375 {
+        display: block;
+        overflow-y: hidden;
+        padding-top: vmin(7);
+        height: vmin(526);
+        transition: height 0.5s linear;
+
+        &_open {
+            height: auto;
+        }
+    }
+}
+
+.benefit {
+    display: grid;
+    grid-column-gap: 31px;
+    grid-template-areas:
+        "benefit__number benefit__title"
+        "benefit__number benefit__text";
+    grid-template-columns: 80px 440px;
+    padding: 20px 0;
+
+    @include _1170 {
+        grid-column-gap: vw(31);
+        grid-template-columns: vw(80) vw(440);
+        padding: vw(20) 0;
+        max-width: vw(554);
+    }
+
+    @include _768 {
+        display: block;
+        padding-top: vw2(17);
+        padding-bottom: vw2(18);
+    }
+
+    @include _375 {
+        padding: vmin(16) 0;
+        max-width: 100%;
+    }
+}
+
+.benefit__number {
+    position: relative;
+    grid-area: benefit__number;
+    margin-top: 28px;
+    font-size: 20px;
+    line-height: 25px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -6px;
+        display: inline-block;
+        width: 80px;
+        height: 1px;
+        background-color: $yellow-main;
+
+        @include _1170 {
+            top: vw(-6);
+            width: vw(80);
+            height: vw(1);
+        }
+
+        @include _768 {
+            top: vw2(27);
+            width: vw2(80);
+            height: vw2(1);
+        }
+
+        @include _375 {
+            top: vmin(26);
+            width: vmin(80);
+            height: vmin(1);
+        }
+    }
+
+    @include _1170 {
+        margin-top: vw(28);
+        font-size: vw(20);
+        line-height: vw(25);
+    }
+
+    @include _768 {
+        margin-top: 0;
+        padding-bottom: vw2(16);
+        font-size: vw2(20);
+        line-height: vw2(25);
+    }
+
+    @include _375 {
+        padding-bottom: vmin(16);
+        font-size: vmin(20);
+        line-height: vmin(25);
+    }
+}
+
+.benefit__title {
+    grid-area: benefit__title;
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.11px;
+
+    @include _1170 {
+        font-size: vw(24);
+        line-height: vw(29.11);
+    }
+
+    @include _768 {
+        font-size: vw2(22);
+        line-height: vw2(30);
+    }
+
+    @include _375 {
+        font-size: vmin(22);
+        line-height: vmin(30);
+    }
+}
+
+.benefit__title-bold {
+    font-weight: 700;
+    color: $yellow-main;
+}
+
+.benefut__text {
+    grid-area: benefit__text;
+    margin: 0;
+    padding-top: 9px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 30px;
+
+    @include _1170 {
+        padding-top: vw(9);
+        padding-bottom: vw(12);
+        font-size: vw(16);
+        line-height: vw(30);
+    }
+
+    @include _768 {
+        padding-top: vw2(10);
+        padding-bottom: vw2(12);
+        font-size: vw2(16);
+        line-height: vw2(22);
+    }
+
+    @include _375 {
+        padding-top: vmin(10);
+        padding-bottom: vmin(5);
+        font-size: vmin(16);
+        line-height: vmin(22);
+    }
+}
+
+/* right-wrapper-end */
+
+.benefits__arrow {
+    display: none;
+
+    @include _375 {
+        display: flex;
+        margin: 0 auto;
+        padding-top: vmin(25);
+        width: vmin(29);
+    }
+}
+
+.benefits__arrow-btn {
+    @include _375 {
+        border: 0;
+        width: vmin(29);
+        height: vmin(10);
+        background-color: transparent;
+        transition: transform 0.3s ease;
+
+        &_active {
+            transform: scaleY(-1);
+        }
+    }
+}

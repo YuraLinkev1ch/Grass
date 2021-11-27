@@ -31,7 +31,8 @@
     max-width: 1139px;
 
     @include _1170 {
-        padding-left: vw(25);
+        padding: 0 vw(47);
+/*         padding-left: vw(25); */
         max-width: vw(1139);
     }
 

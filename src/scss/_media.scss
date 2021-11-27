@@ -19,9 +19,19 @@
 }
 
 .section-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+
     @include _1170 {
-        font-size: vw(70);
-        line-height: vw(70);
+        font-size: vw(60);
+        line-height: vw(60);
+    }
+
+    @include _768 {
+        font-size: vw2(30);
+        line-height: vw2(50);
     }
 
     @include _375 {

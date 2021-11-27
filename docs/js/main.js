@@ -56,7 +56,7 @@ eval("let tabs = document.querySelector('.container_services')\r\nlet btns = tab
   \************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://gulp-builder/./src/js/main.js?");
+eval("let benefitsArrowBtn = document.querySelector('.benefits__arrow-btn');\r\nlet benefitsRightWrapper = document.querySelector('.benefits__right-wrapper');\r\n\r\nbenefitsArrowBtn.addEventListener('click', function() {\r\n    benefitsRightWrapper.classList.toggle('benefits__right-wrapper_open');\r\n    this.classList.toggle('benefits__arrow-btn_active');\r\n});\n\n//# sourceURL=webpack://gulp-builder/./src/js/main.js?");
 
 /***/ }),
 
