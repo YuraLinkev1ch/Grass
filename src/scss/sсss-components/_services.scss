@@ -33,7 +33,7 @@
     @include _375 {
         padding: 0;
         padding-top: vmin(60);
-        padding-bottom: vmin(62);
+        padding-bottom: vmin(80);
         max-width: vmin(375);
     }
 }
@@ -231,6 +231,9 @@
 }
 
 .tab-content__left-part {
+    position: relative;
+    z-index: 30;
+
     @include _768 {
         padding-left: vw2(34);
     }
@@ -238,16 +241,16 @@
 
 .tab-content__title {
     margin: 0;
-    padding-top: 21px;
-    padding-bottom: 23px;
+    padding-top: 28px;
+    padding-bottom: 31px;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
     color: $black-main;
 
     @include _1170 {
-        padding-top: vw(21);
-        padding-bottom: vw(23);
+        padding-top: vw(28);
+        padding-bottom: vw(31);
         font-size: vw(30);
         line-height: vw(35);
     }
@@ -262,6 +265,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+    text-shadow: 1px 1px $white-main;
     color: $black-main;
 
     @include _1170 {
@@ -270,9 +274,9 @@
     }
 
     @include _768 {
-        padding-top: vw2(15);
+        padding-top: vw2(16);
         font-size: vw2(16);
-        line-height: vw2(23);
+        line-height: vw2(22);
     }
 }
 
@@ -393,19 +397,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 170px;
+    width: 179px;
 
     @include _1170 {
         right: vw(625);
         top: vw(589);
-        width: vw(170);
+        width: vw(179);
     }
 
     @include _768 {
         position: static;
         margin: 0 auto;
         margin-top: vw2(13);
-        width: vw2(95);
+        width: vw2(100);
     }
 }
 
