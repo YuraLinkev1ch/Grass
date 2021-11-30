@@ -120,3 +120,27 @@ let mobileSwiperServices = new Swiper('.services__mobile-swiper', {
 /* services-swipers-end */
 
 /* swiper-config-end */
+
+
+
+/* portfolio-swipers-start */
+
+let swiperPortfolio = new Swiper('.portfolio__swiper', {
+    modules: [Navigation, Pagination],
+    /* autoHeight: 'true',  */
+    slideClass: 'portfolio__swiper-slide',
+    pagination: {
+        el: '.portfolio__swiper-pagination',
+        type: "fraction",
+        renderFraction(currentClass, totalClass) {
+            return `<span class="${currentClass}"></span>/<span class="${totalClass}"></span>`;
+        },
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.portfolio__swiper-button-next',
+        prevEl: '.portfolio__swiper-button-prev',
+    },
+})
+
+/* portfolio-swipers-end */
