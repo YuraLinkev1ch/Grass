@@ -89,16 +89,10 @@
 .portfolio__swiper {
     display: flex;
     flex-direction: column;
-    padding-bottom: 84px;
     max-width: 1440px;
 
     @include _1440 {
-        padding-bottom: vw1440(84);
         max-width: vw1440(1440);
-    }
-
-    @include _1170 {
-        padding-bottom: vw(84);
     }
 
     @include _768 {
