@@ -96,7 +96,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 73px  200px 75px;
+    padding: 0 73px  207px 75px;
     min-height: 347px;
     max-width: 1287px;
     background: url("./../../img/bg-dec-lines.svg") no-repeat;
@@ -104,7 +104,7 @@
     background-size: contain;
 
     @include _1440 {
-        padding: 0 vw1440(73)  vw1440(200) vw1440(75);
+        padding: 0 vw1440(73)  vw1440(207) vw1440(75);
         min-height: vw1440(347);
         max-width: vw1440(1287);
     }

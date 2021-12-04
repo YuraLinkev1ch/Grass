@@ -2002,7 +2002,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 73px  200px 75px;
+  padding: 0 73px  207px 75px;
   min-height: 347px;
   max-width: 1287px;
   background: url("./../../img/bg-dec-lines.svg") no-repeat;
@@ -2010,7 +2010,7 @@ body {
   background-size: contain; }
   @media (max-width: 1440px) {
     .scheme__cards {
-      padding: 0 5.06944vw 13.88889vw 5.20833vw;
+      padding: 0 5.06944vw 14.375vw 5.20833vw;
       min-height: 24.09722vw;
       max-width: 89.375vw; } }
   @media (max-width: 768px) {
@@ -2391,6 +2391,59 @@ body {
     text-align: left; } }
 
 /* scheme-cards-end */
+.banner {
+  width: 100%;
+  background: -webkit-image-set(url("./../../img/bg-banner.jpg") 1x, url("./../../img/bg-banner@2x.jpg") 2x) no-repeat;
+  background: image-set(url("./../../img/bg-banner.jpg") 1x, url("./../../img/bg-banner@2x.jpg") 2x) no-repeat;
+  background-size: cover;
+  background-color: rgba(40, 40, 40, 0.7);
+  background-blend-mode: multiply; }
+
+.container_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 47px;
+  padding-right: 32px;
+  min-height: 197px;
+  max-width: 1129px; }
+  @media (max-width: 1170px) {
+    .container_banner {
+      padding: 0 4.01709vw;
+      padding-right: 2.73504vw;
+      min-height: 16.83761vw;
+      max-width: 96.49573vw; } }
+  @media (max-width: 768px) {
+    .container_banner {
+      padding-right: 5.98958vw;
+      padding-left: 6.51042vw;
+      min-height: 13.80208vw;
+      max-width: 87.89063vw; } }
+  @media (max-width: 375px) {
+    .container_banner {
+      display: none; } }
+
+.banner__section-title {
+  color: #FFF; }
+  @media (max-width: 768px) {
+    .banner__section-title {
+      padding-bottom: 0.52083vw; } }
+
+.banner__button {
+  margin-bottom: 2px; }
+  @media (max-width: 1170px) {
+    .banner__button {
+      margin-bottom: 0.17094vw; } }
+  @media (max-width: 768px) {
+    .banner__button {
+      margin-bottom: 0.26042vw; } }
+
 @media (max-width: 1170px) {
   .logo {
     width: 6.92308vw;
