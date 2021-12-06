@@ -2782,6 +2782,45 @@ body {
       line-height: 8vmin; } }
 
 /* reviews-swiper-end */
+.mobile-banner {
+  display: none; }
+  @media (max-width: 375px) {
+    .mobile-banner {
+      display: block;
+      width: 100%;
+      background: -webkit-image-set(url("./../../img/bg-banner.jpg") 1x, url("./../../img/bg-banner@2x.jpg") 2x) no-repeat;
+      background: image-set(url("./../../img/bg-banner.jpg") 1x, url("./../../img/bg-banner@2x.jpg") 2x) no-repeat;
+      background-size: cover;
+      background-color: rgba(40, 40, 40, 0.7);
+      background-blend-mode: multiply; } }
+
+@media (max-width: 375px) {
+  .container_mobile-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 8.53333vmin;
+    padding-right: 32px;
+    min-height: 49.86667vmin;
+    max-width: 82.93333vmin; } }
+
+@media (max-width: 375px) {
+  .mobile-banner__section-title {
+    padding-top: 4.53333vmin;
+    padding-bottom: 6.93333vmin;
+    color: #FFF; } }
+
+@media (max-width: 375px) {
+  .mobile-banner__button {
+    margin-bottom: 10.66667vmin; } }
+
 @media (max-width: 1170px) {
   .logo {
     width: 6.92308vw;

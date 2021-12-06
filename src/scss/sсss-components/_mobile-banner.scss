@@ -1,0 +1,43 @@
+.mobile-banner {
+    display: none;
+
+    @include _375 {
+        display: block;
+        width: 100%;
+        background:
+            image-set(
+                url("./../../img/bg-banner.jpg") 1x,
+                url("./../../img/bg-banner@2x.jpg") 2x
+                )
+        no-repeat;
+        background-size: cover;
+        background-color: rgba(40, 40, 40, 0.7);
+        background-blend-mode: multiply;
+    }
+}
+
+.container_mobile-banner {
+    @include _375 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 vmin(32);
+        padding-right: 32px;
+        min-height: vmin(187);
+        max-width: vmin(311);
+    }
+}
+
+.mobile-banner__section-title {
+    @include _375 {
+        padding-top: vmin(17);
+        padding-bottom: vmin(26);
+        color: $white-main;
+    }
+}
+
+.mobile-banner__button {
+    @include _375 {
+        margin-bottom: vmin(40);
+    }
+}
