@@ -1,0 +1,365 @@
+.reviews {
+    width: 100%;
+    background:
+        image-set(
+            url("./../../img/bg-decoration.png") 1x,
+            url("./../../img/bg-decoration@2x.png") 2x
+            )
+    no-repeat;
+    background-position: right;
+    background-size: contain;
+
+    @include _375 {
+        background: none;
+    }
+}
+
+.container_reviews {
+    display: flex;
+    justify-content: space-between;
+    padding: 111px 47px 10px;
+    padding-right: 16px;
+    max-width: 1098px;
+
+    @include _1170 {
+        padding: vw(111) vw(47) vw(10);
+        padding-right: vw(16);
+        max-width: vw(1098);
+    }
+
+    @include _768 {
+        justify-content: center;
+        padding: vw2(80) vw2(47) vw2(26);
+        padding-left: vw2(46);
+    }
+
+    @include _375 {
+        padding: vmin(61) vmin(47) vmin(6);
+        padding-left: vmin(35);
+    }
+}
+
+.reviews__section-title {
+    padding-top: 97px;
+    padding-bottom: 37px;
+
+    @include _1170 {
+        padding-top: vw(97);
+        padding-bottom: vw(37);
+    }
+
+    @include _768 {
+        padding: 0;
+    }
+}
+
+.reviews__section-number {
+    position: relative;
+    padding-top: 31px;
+    padding-right: 28px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline-block;
+        width: 0.5px;
+        height: 200px;
+        background-color: $yellow-main;
+
+        @include _1170 {
+            width: vw(0.5);
+            height: vw(200);
+        }
+    }
+
+    @include _1170 {
+        padding-top: vw(31);
+        padding-right: vw(28);
+    }
+}
+
+/* reviews-swiper-buttons-start */
+
+.reviews__swiper-buttons-wrapper {
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    padding-left: 27px;
+    width: 1098px;
+
+    @include _1170 {
+        padding-bottom: vw(24);
+        padding-left: vw(27);
+        width: vw(1098);
+    }
+
+    @include _768 {
+        justify-content: center;
+        order: 2;
+        padding: 0;
+        padding-top: vw2(17.33);
+    }
+
+    @include _375 {
+        padding-top: vmin(0);
+    }
+}
+
+.reviews__swiper-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 166px;
+
+    @include _1170 {
+        width: vw(166);
+    }
+
+    @include _768 {
+        width: vw2(98);
+    }
+
+    @include _375 {
+        min-width: vmin(188);
+    }
+}
+
+.reviews__swiper-button-prev,
+.reviews__swiper-button-next {
+    position: static;
+    margin: 0;
+    margin-top: 5px;
+
+    @include _1170 {
+        margin-top: vw(5);
+    }
+
+    @include _768 {
+        margin-top: vw2(5);
+    }
+
+    @include _375 {
+        display: none;
+    }
+}
+
+.reviews__swiper-pagination {
+    @include _375 {
+        display: flex;
+        justify-content: space-between;
+
+        & > .swiper-pagination-bullet {
+            margin: 0 vmin(7.5) !important;
+            width: vmin(8);
+            height: vmin(8);
+            background-color: $grey-main;
+            opacity: 1;
+
+            &-active {
+                background-color: $yellow-main;
+            }
+        }
+    }
+}
+
+/* reviews-swiper-buttons-end */
+
+/* reviews-swiper-start */
+
+.reviews__swiper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 189px;
+    max-width: 1778px;
+
+    @include _1440 {
+        padding-bottom: vw1440(189);
+        max-width: vw1440(1440);
+    }
+
+    @include _768 {
+        order: 1;
+        padding-bottom: vw2(92);
+    }
+
+    @include _375 {
+        padding-bottom: vmin(80);
+    }
+}
+
+.reviews__swiper-wrapper {
+    padding: 0 30px;
+
+    @include _1440 {
+        padding: 0;
+    }
+
+    @include _768 {
+        padding-top: vw2(20);
+        padding-bottom: vw2(15);
+        padding-left: vw2(15);
+    }
+
+    @include _375 {
+        padding: vmin(20) 0;
+    }
+}
+
+.reviews__swiper-slide {
+    position: relative;
+    display: grid;
+    flex-shrink: 0;
+    grid-template-rows: minmax(25px, max-content) max-content;
+    margin: 0;
+    margin-right: 72.5px;
+    margin-left: 0;
+    border-radius: 10px;
+    padding: 30px 43px 19px 49px;
+    width: 428px;
+    min-height: 201px;
+    box-shadow: 1px -1px 5px rgba(29, 15, 3, 0.1), -4px 6px 30px rgba(29, 15, 3, 0.15);
+    background-color: $white-main;
+
+    &::after {
+        content: "“";
+        position: absolute;
+        right: 242px;
+        top: 7px;
+        display: inline-block;
+        font-family: "Сormorant Garamond", "Gilroy", "Arial", "Helvetica", sans-serif;
+        font-weight: 700;
+        font-size: 100px;
+        color: $grey3;
+
+        @include _1440 {
+            right: vw1440(242);
+            top: vw1440(7);
+            font-size: vw1440(100);
+        }
+
+        @include _768 {
+            right: vw2(209);
+            top: vw2(19);
+            font-size: vw2(100);
+        }
+
+        @include _375 {
+            content: none;
+        }
+    }
+
+    @include _1440 {
+        grid-template-rows: minmax(vw1440(25), max-content) max-content;
+        margin-right: vw1440(72.5);
+        border-radius: vw1440(10);
+        padding: vw1440(30) vw1440(43) vw1440(19) vw1440(49);
+        width: vw1440(428);
+        min-height: vw1440(201);
+        box-shadow: vw1440(1) vw1440(-1) vw1440(5) rgba(29, 15, 3, 0.1), vw1440(-4) vw1440(6) vw1440(30) rgba(29, 15, 3, 0.15);
+    }
+
+    @include _768 {
+        grid-template-rows: minmax(vw2(25), max-content) max-content;
+        margin-right: vw2(30);
+        border-radius: vw2(10);
+        padding: vw2(42) vw2(31) vw2(26) vw2(42);
+        width: vw2(386);
+        min-height: vw2(199);
+        box-shadow: vw2(1) vw2(-1) vw2(5) rgba(29, 15, 3, 0.1), vw2(-4) vw2(6) vw2(30) rgba(29, 15, 3, 0.15);
+    }
+
+    @include _375 {
+        grid-template-rows: minmax(vmin(25), max-content) max-content;
+        margin: auto vmin(15);
+        border-radius: vmin(10);
+        padding: vmin(24) vmin(33) vmin(24) vmin(32);
+        width: vmin(279) !important;
+        min-height: vmin(305);
+        box-shadow: vmin(1) vmin(-1) vmin(5) rgba(29, 15, 3, 0.1), vmin(-4) vmin(6) vmin(30) rgba(29, 15, 3, 0.15);
+    }
+}
+
+.reviews__swiper-title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-bottom: 18px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: $yellow-main;
+
+    @include _1440 {
+        padding-bottom: vw1440(18);
+        font-size: vw1440(20);
+        line-height: vw1440(30);
+    }
+
+    @include _768 {
+        padding-bottom: vw2(25);
+        padding-left: vw2(3);
+        font-size: vw2(20);
+        line-height: vw2(30);
+    }
+
+    @include _375 {
+        padding-bottom: vmin(13);
+        padding-left: 0;
+        font-size: vmin(20);
+        line-height: vmin(30);
+    }
+}
+
+.reviews__swiper-time {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    padding-top: 9px;
+    font-weight: 400;
+    font-size: 16px;
+    color: $grey3;
+
+    @include _1440 {
+        padding-top: vw1440(9);
+        font-size: vw1440(16);
+    }
+
+    @include _768 {
+        padding-top: vw2(9);
+        font-size: vw2(16);
+    }
+
+    @include _375 {
+        padding-top: vmin(8);
+        font-size: vmin(16);
+    }
+}
+
+.reviews__swiper-text {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $grey4;
+
+    @include _1440 {
+        font-size: vw1440(16);
+        line-height: vw1440(30);
+    }
+
+    @include _768 {
+        font-size: vw2(16);
+        line-height: vw2(30);
+    }
+
+    @include _375 {
+        padding-left: vmin(2);
+        font-size: vmin(16);
+        line-height: vmin(30);
+    }
+}
+
+/* reviews-swiper-end */
