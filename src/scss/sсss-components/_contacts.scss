@@ -16,14 +16,14 @@
     grid-column-gap: 200px;
     grid-template-columns: minmax(auto, 421px) minmax(auto, 664px);
     grid-template-rows: 200px minmax(auto, 660px);
-    padding: 25px 0 150px 155px;
+    padding: 25px 0 145px 155px;
     max-width: 1285px;
 
     @include _1440 {
         grid-column-gap: vw1440(200);
         grid-template-columns: minmax(auto, vw1440(421)) minmax(auto, vw1440(664));
         grid-template-rows: vw1440(200) minmax(auto, vw1440(660));
-        padding: vw1440(25) 0 vw1440(150) vw1440(155);
+        padding: vw1440(25) 0 vw1440(145) vw1440(155);
         max-width: vw1440(1285);
     }
 
@@ -207,7 +207,7 @@
 
     @include _768 {
         align-items: center;
-        padding: vw2(79) 0 vw2(100);
+        padding: vw2(79) 0 vw2(102);
     }
 
     @include _375 {

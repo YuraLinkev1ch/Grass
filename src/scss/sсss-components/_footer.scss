@@ -1,0 +1,147 @@
+.footer {
+    width: 100%;
+    background-color: $background-dark;
+}
+
+.container_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 85px 47px 87px;
+    max-width: 1132px;
+    color: $white-main;
+
+    @include _1170 {
+        padding: vw(85) vw(47) vw(87);
+        max-width: vw(1132);
+    }
+
+    @include _768 {
+        flex-direction: column;
+        padding: vw2(27) vw2(47) vw2(26);
+        max-width: vw2(500);
+    }
+
+    @include _375 {
+        padding: vmin(33) vmin(31) vmin(29) vmin(15);
+        max-width: vmin(190);
+    }
+}
+
+.footer__logo {
+    padding-bottom: 2px;
+
+    @include _1170 {
+        padding-bottom: vw(2);
+    }
+
+    @include _768 {
+        margin-bottom: vw2(31);
+        padding: 0;
+    }
+
+    @include _375 {
+        display: none;
+    }
+}
+
+/* footer-nav-start */
+
+.footer-nav {
+    padding-right: 3px;
+    max-width: 594px;
+
+    @include _1170 {
+        padding-right: vw(3);
+        max-width: vw(594);
+    }
+
+    @include _768 {
+        margin-bottom: vw2(33);
+        padding: 0;
+        max-width: vw2(464);
+    }
+
+    @include _375 {
+        display: none;
+    }
+}
+
+.footer-nav__list {
+    width: 100%;
+}
+
+.footer-nav__list-item {
+    padding: 0;
+}
+
+.footer-nav__list-link {
+    font-size: 13px;
+    line-height: 16px;
+
+    @include _1170 {
+        font-size: vw(13);
+        line-height: vw(16);
+    }
+
+    @include _768 {
+        font-size: vw2(12);
+        line-height: vw2(14);
+    }
+}
+
+/* footer-nav-end */
+
+/* social-links-start */
+
+.footer__social-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-right: 2px;
+    min-width: 185px;
+
+    @include _1170 {
+        padding-top: vw(2);
+        padding-right: vw(2);
+        min-width: vw(185);
+    }
+
+    @include _768 {
+        margin-bottom: vw2(26);
+        padding: 0;
+        min-width: vw2(185);
+    }
+
+    @include _375 {
+        margin-bottom: 0;
+        min-width: vmin(185);
+    }
+}
+
+.footer__social-links-item {
+    list-style: none;
+}
+
+.footer__socilal-link {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    @include _1170 {
+        width: vw(25);
+        height: vw(25);
+    }
+
+    @include _768 {
+        width: vw2(25);
+        height: vw2(25);
+    }
+
+    @include _375 {
+        width: vmin(25);
+        height: vmin(25);
+    }
+}
+
+/* social-links-end */

@@ -2971,14 +2971,14 @@ body {
   grid-column-gap: 200px;
   grid-template-columns: minmax(auto, 421px) minmax(auto, 664px);
   grid-template-rows: 200px minmax(auto, 660px);
-  padding: 25px 0 150px 155px;
+  padding: 25px 0 145px 155px;
   max-width: 1285px; }
   @media (max-width: 1440px) {
     .container_contacts {
       grid-column-gap: 13.88889vw;
       grid-template-columns: minmax(auto, 29.23611vw) minmax(auto, 46.11111vw);
       grid-template-rows: 13.88889vw minmax(auto, 45.83333vw);
-      padding: 1.73611vw 0 10.41667vw 10.76389vw;
+      padding: 1.73611vw 0 10.06944vw 10.76389vw;
       max-width: 89.23611vw; } }
   @media (max-width: 1170px) {
     .container_contacts {
@@ -3155,7 +3155,7 @@ body {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      padding: 10.28646vw 0 13.02083vw; } }
+      padding: 10.28646vw 0 13.28125vw; } }
   @media (max-width: 375px) {
     .contacts-info {
       padding: 15.73333vmin 0 21.33333vmin; } }
@@ -3425,6 +3425,136 @@ body {
   display: none !important; }
 
 /* contacts-info-end */
+.footer {
+  width: 100%;
+  background-color: #0E1720; }
+
+.container_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 85px 47px 87px;
+  max-width: 1132px;
+  color: #FFF; }
+  @media (max-width: 1170px) {
+    .container_footer {
+      padding: 7.26496vw 4.01709vw 7.4359vw;
+      max-width: 96.75214vw; } }
+  @media (max-width: 768px) {
+    .container_footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 3.51563vw 6.11979vw 3.38542vw;
+      max-width: 65.10417vw; } }
+  @media (max-width: 375px) {
+    .container_footer {
+      padding: 8.8vmin 8.26667vmin 7.73333vmin 4vmin;
+      max-width: 50.66667vmin; } }
+
+.footer__logo {
+  padding-bottom: 2px; }
+  @media (max-width: 1170px) {
+    .footer__logo {
+      padding-bottom: 0.17094vw; } }
+  @media (max-width: 768px) {
+    .footer__logo {
+      margin-bottom: 4.03646vw;
+      padding: 0; } }
+  @media (max-width: 375px) {
+    .footer__logo {
+      display: none; } }
+
+/* footer-nav-start */
+.footer-nav {
+  padding-right: 3px;
+  max-width: 594px; }
+  @media (max-width: 1170px) {
+    .footer-nav {
+      padding-right: 0.25641vw;
+      max-width: 50.76923vw; } }
+  @media (max-width: 768px) {
+    .footer-nav {
+      margin-bottom: 4.29688vw;
+      padding: 0;
+      max-width: 60.41667vw; } }
+  @media (max-width: 375px) {
+    .footer-nav {
+      display: none; } }
+
+.footer-nav__list {
+  width: 100%; }
+
+.footer-nav__list-item {
+  padding: 0; }
+
+.footer-nav__list-link {
+  font-size: 13px;
+  line-height: 16px; }
+  @media (max-width: 1170px) {
+    .footer-nav__list-link {
+      font-size: 1.11111vw;
+      line-height: 1.36752vw; } }
+  @media (max-width: 768px) {
+    .footer-nav__list-link {
+      font-size: 1.5625vw;
+      line-height: 1.82292vw; } }
+
+/* footer-nav-end */
+/* social-links-start */
+.footer__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 2px;
+  padding-right: 2px;
+  min-width: 185px; }
+  @media (max-width: 1170px) {
+    .footer__social-links {
+      padding-top: 0.17094vw;
+      padding-right: 0.17094vw;
+      min-width: 15.81197vw; } }
+  @media (max-width: 768px) {
+    .footer__social-links {
+      margin-bottom: 3.38542vw;
+      padding: 0;
+      min-width: 24.08854vw; } }
+  @media (max-width: 375px) {
+    .footer__social-links {
+      margin-bottom: 0;
+      min-width: 49.33333vmin; } }
+
+.footer__social-links-item {
+  list-style: none; }
+
+.footer__socilal-link {
+  display: inline-block;
+  width: 25px;
+  height: 25px; }
+  @media (max-width: 1170px) {
+    .footer__socilal-link {
+      width: 2.13675vw;
+      height: 2.13675vw; } }
+  @media (max-width: 768px) {
+    .footer__socilal-link {
+      width: 3.25521vw;
+      height: 3.25521vw; } }
+  @media (max-width: 375px) {
+    .footer__socilal-link {
+      width: 6.66667vmin;
+      height: 6.66667vmin; } }
+
+/* social-links-end */
 @media (max-width: 1170px) {
   .logo {
     width: 6.92308vw;
