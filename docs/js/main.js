@@ -19,6 +19,16 @@ eval("!function(e,t){if(true)module.exports=t();else { var o, n; }}(window,(func
 
 /***/ }),
 
+/***/ "./src/js/js-components/back-to-top-button.js":
+/*!****************************************************!*\
+  !*** ./src/js/js-components/back-to-top-button.js ***!
+  \****************************************************/
+/***/ (() => {
+
+eval("/*back-to-top-button-start*/\r\n\r\n(function() {\r\n    'use strict';\r\n  \r\n    function trackScroll() {\r\n      var scrolled = window.pageYOffset +300;\r\n      var coords = document.documentElement.clientHeight;\r\n  \r\n      if (scrolled > coords) {\r\n        goTopBtn.classList.add('back-to-top-btn-show');\r\n      }\r\n      if (scrolled < coords) {\r\n        goTopBtn.classList.remove('back-to-top-btn-show');\r\n      }\r\n    }\r\n  \r\n    function backToTop() {\r\n      if (window.pageYOffset > 0) {\r\n        window.scrollBy(0, -80);\r\n        setTimeout(backToTop, 0);\r\n      }\r\n    }\r\n  \r\n    var goTopBtn = document.querySelector('.back-to-top-btn');\r\n  \r\n    window.addEventListener('scroll', trackScroll);\r\n    goTopBtn.addEventListener('click', backToTop);\r\n  })();\r\n\r\n/*back-to-top-button-end*/\n\n//# sourceURL=webpack://gulp-builder/./src/js/js-components/back-to-top-button.js?");
+
+/***/ }),
+
 /***/ "./src/js/js-components/burger-menu-toggle.js":
 /*!****************************************************!*\
   !*** ./src/js/js-components/burger-menu-toggle.js ***!
@@ -1267,6 +1277,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	__webpack_require__("./src/js/main.js");
 /******/ 	__webpack_require__("./src/js/vendor.js");
+/******/ 	__webpack_require__("./src/js/js-components/back-to-top-button.js");
 /******/ 	__webpack_require__("./src/js/js-components/burger-menu-toggle.js");
 /******/ 	__webpack_require__("./src/js/js-components/swiper-config.js");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/js/js-components/tabs.js");

@@ -21,6 +21,58 @@ body {
     max-width: 1130px;
 }
 
+/* back-to-top-button-start */
+
+.back-to-top-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9;
+    display: none;
+    border: 0;
+    border-radius: 2px;
+    width: 80px;
+    height: 80px;
+    font-size: 46px;
+    line-height: 30px;
+    color: $white-main;
+    background: transparent;
+    opacity: 0.5;
+
+    animation-name: back_to_top-anim;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.back-to-top-btn:active {
+    background: $white-main;
+}
+
+.back-to-top-btn-show {
+    display: block;
+}
+
+@keyframes back_to_top-anim {
+    0% {
+        right: -30px;
+    }
+
+    100% {
+        right: 20px;
+    }
+}
+
+/* back-to-top-button-end */
+
 .logo {
     width: 81px;
     height: 27px;
