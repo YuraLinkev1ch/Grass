@@ -112,6 +112,7 @@ body {
   font-size: 46px;
   line-height: 30px;
   color: #FFF;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: transparent;
   opacity: 0.5;
   -webkit-animation-name: back_to_top-anim;
@@ -130,23 +131,28 @@ body {
   .back-to-top-btn:hover {
     opacity: 1; }
 
-.back-to-top-btn:active {
-  background: #FFF; }
-
 .back-to-top-btn-show {
   display: block; }
 
 @-webkit-keyframes back_to_top-anim {
   0% {
-    right: -30px; }
+    right: -30px;
+    -webkit-transform: rotate(0.5turn);
+    transform: rotate(0.5turn); }
   100% {
-    right: 20px; } }
+    right: 20px;
+    -webkit-transform: rotate(0);
+    transform: rotate(0); } }
 
 @keyframes back_to_top-anim {
   0% {
-    right: -30px; }
+    right: -30px;
+    -webkit-transform: rotate(0.5turn);
+    transform: rotate(0.5turn); }
   100% {
-    right: 20px; } }
+    right: 20px;
+    -webkit-transform: rotate(0);
+    transform: rotate(0); } }
 
 /* back-to-top-button-end */
 .logo {

@@ -6,7 +6,7 @@
     function trackScroll() {
       var scrolled = window.pageYOffset +300;
       var coords = document.documentElement.clientHeight;
-  
+      
       if (scrolled > coords) {
         goTopBtn.classList.add('back-to-top-btn-show');
       }

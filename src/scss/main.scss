@@ -36,6 +36,7 @@ body {
     font-size: 46px;
     line-height: 30px;
     color: $white-main;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background: transparent;
     opacity: 0.5;
 
@@ -53,10 +54,6 @@ body {
     }
 }
 
-.back-to-top-btn:active {
-    background: $white-main;
-}
-
 .back-to-top-btn-show {
     display: block;
 }
@@ -64,10 +61,12 @@ body {
 @keyframes back_to_top-anim {
     0% {
         right: -30px;
+        transform: rotate(0.5turn);
     }
 
     100% {
         right: 20px;
+        transform: rotate(0);
     }
 }
 
