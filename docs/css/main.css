@@ -104,7 +104,6 @@ body {
   right: 20px;
   bottom: 20px;
   z-index: 9;
-  display: none;
   border: 0;
   border-radius: 2px;
   width: 80px;
@@ -114,45 +113,21 @@ body {
   color: #FFF;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: transparent;
-  opacity: 0.5;
-  -webkit-animation-name: back_to_top-anim;
-  animation-name: back_to_top-anim;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-  animation-fill-mode: none;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer; }
   .back-to-top-btn:hover {
     opacity: 1; }
 
 .back-to-top-btn-show {
-  display: block; }
-
-@-webkit-keyframes back_to_top-anim {
-  0% {
-    right: -30px;
-    -webkit-transform: rotate(0.5turn);
-    transform: rotate(0.5turn); }
-  100% {
-    right: 20px;
-    -webkit-transform: rotate(0);
-    transform: rotate(0); } }
-
-@keyframes back_to_top-anim {
-  0% {
-    right: -30px;
-    -webkit-transform: rotate(0.5turn);
-    transform: rotate(0.5turn); }
-  100% {
-    right: 20px;
-    -webkit-transform: rotate(0);
-    transform: rotate(0); } }
+  opacity: 0.5;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+  transform: translateX(0); }
 
 /* back-to-top-button-end */
 .logo {
