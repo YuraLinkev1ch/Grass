@@ -36,7 +36,7 @@ eval("!function(e,t){if(true)module.exports=t();else { var o, n; }}(window,(func
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! aos */ \"./node_modules/aos/dist/aos.js\");\n/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\naos__WEBPACK_IMPORTED_MODULE_0___default().init({\r\n\tduration: 500,\r\n\teasing: 'fade-up',\r\n\tdelay: 100,\r\n    once: true, \r\n});\n\n//# sourceURL=webpack://gulp-builder/./src/js/js-components/aos-config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! aos */ \"./node_modules/aos/dist/aos.js\");\n/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\naos__WEBPACK_IMPORTED_MODULE_0___default().init({\r\n\tduration: 500,\r\n\teasing: 'fade-up',\r\n\tdelay: 100,\r\n    once: true, \r\n\tdisable: 'mobile',\r\n});\n\n//# sourceURL=webpack://gulp-builder/./src/js/js-components/aos-config.js?");
 
 /***/ }),
 
