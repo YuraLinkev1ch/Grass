@@ -98,7 +98,7 @@ const scripts = () => {
             module: {
                 rules: [{
                   test: /\.m?js$/,
-                  exclude: /(node_modules)/,
+                  /* exclude: /(node_modules)/, */
                 }]
               },
 		}))
