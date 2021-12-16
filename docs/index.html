@@ -93,7 +93,7 @@
                 <p class="hero__text">
                     Благоустройство и озеленение территорий с гарантией на выполненные работы
                 </p> 
-                <button class="hero__button button_primary button">
+                <button class="hero__button button_primary button" data-path="first">
                     Получить консультацию
                 </button>
             </div>
@@ -185,7 +185,7 @@
                 <p class="tab-content__desc">
                     Специалисты нашей студии используют в своих проектах только современные и качественные материалы. А индивидуальный подход к каждому проекту позволяет воплощать ваши самые смелые идеи и пожелания
                 </p>
-                <button class="tab-content__button button_primary button">Заказать</button>
+                <button class="tab-content__button button_primary button" data-path="first">Заказать</button>
             </div>
 
             <div class="tab-content__right-part">
@@ -279,7 +279,7 @@
                 <p class="tab-content__desc">
                     Специалисты нашей студии готовы разработать для вас индивидуальный проект фитодизайна с учетом ваших личных предпочтений и размеров планируемого бюджета. При этом будут учтены функциональное назначение оформляемой зоны, размеры помещения, климатические условия и другие аспекты.
                 </p>
-                <button class="tab-content__button button_primary button">Заказать</button>
+                <button class="tab-content__button button_primary button" data-path="first">Заказать</button>
             </div>
 
             <div class="tab-content__right-part">
@@ -373,7 +373,7 @@
                 <p class="tab-content__desc">
                     Мы разработаем для Вас план посадки деревьев, подберем оптимальный посадочный материал и в кратчайшие сроки высадим растения с соблюдением всех правил. Специалисты компании обладают большим практическим опытом в подборе и посадке деревьев. Благодаря этому процент приживаемости плодовых и декоративных деревьев достигает 95%.
                 </p>
-                <button class="tab-content__button button_primary button">Заказать</button>
+                <button class="tab-content__button button_primary button" data-path="first">Заказать</button>
             </div>
 
             <div class="tab-content__right-part">
@@ -470,7 +470,7 @@
                     <p class="services__mobile-swiper-desc">
                         Специалисты нашей студии используют в своих проектах только современные и качественные материалы. А индивидуальный подход к каждому проекту позволяет воплощать ваши самые смелые идеи и пожелания.
                     </p>
-                    <button class="services__mobile-swiper-button button_primary button">Заказать</button>
+                    <button class="services__mobile-swiper-button button_primary button" data-path="first">Заказать</button>
                 </div>
 
                 <div class="services__mobile-swiper-slide services__mobile-swiper-slide_phytodesign">
@@ -478,14 +478,14 @@
                     <p class="services__mobile-swiper-desc">
                         Специалисты нашей студии используют в своих проектах только современные и качественные материалы. А индивидуальный подход к каждому проекту позволяет воплощать ваши самые смелые идеи и пожелания.
                     </p>
-                    <button class="services__mobile-swiper-button button_primary button">Заказать</button>
+                    <button class="services__mobile-swiper-button button_primary button" data-path="first">Заказать</button>
                 </div>
                 <div class="services__mobile-swiper-slide services__mobile-swiper-slide_planting">
                     <h3 class="services__mobile-swiper-title">Посадка деревьев</h3>
                     <p class="services__mobile-swiper-desc">
                         Мы разработаем для Вас план посадки деревьев, подберем оптимальный посадочный материал и в кратчайшие сроки высадим растения с соблюдением всех правил.
                     </p>
-                    <button class="services__mobile-swiper-button button_primary button">Заказать</button>
+                    <button class="services__mobile-swiper-button button_primary button" data-path="first">Заказать</button>
                 </div>
             </div> 
         </div>
@@ -862,7 +862,7 @@
 			<section class="banner">
     <div class="container container_banner">
         <h2 class="section-title banner__section-title">12% скидка на проект</h2>
-        <button class="banner__button button_primary button">Получить консультацию</button>
+        <button class="banner__button button_primary button" data-path="first">Получить консультацию</button>
     </div>
 </section>
 			<section class="reviews" id="reviews">
@@ -959,7 +959,7 @@
 			<section class="mobile-banner">
     <div class="container container_mobile-banner">
         <h2 class="section-title mobile-banner__section-title">12% скидка на проект</h2>
-        <button class="mobile-banner__button button_primary button">Получить консультацию</button>
+        <button class="mobile-banner__button button_primary button" data-path="first">Получить консультацию</button>
     </div>
 </section>
 			<section class="contacts" id="contacts">
@@ -968,20 +968,23 @@
             06
         </div>
 
-        <form class="contacts-form form">
+        <form class="contacts-form form" action="" enctype="multipart/form-data"  method="POST">
             <h2 class="contacts-form__title section-title">Остались вопросы?</h2>
-            <label class="contacts-form__label-name form__label-name" for="first_name">Имя</label>
-            <input class="contacts-form__input-name form__input-name" id="first_name" type="text" placeholder="Введите Ваше имя" required>
-            <label class="contacts-form__label-tel form__label-tel" for="first_tel">Номер&nbsp; телефона</label>
-            <input class="contacts-form__input-tel form__input-tel" id="first_tel" type="tel" placeholder="+375" required>
-            <label class="contacts-form__label-text form__label-text" for="first_text">Ваш вопрос</label>
-            <textarea class="contacts-form__textarea-text form__textarea-text" id="first_text" placeholder="Введите текст" required></textarea> 
+            <div class="contacts-form__wrapper">
+                <label class="contacts-form__label-name form__label-name" for="first_name">Имя</label>
+                <input class="contacts-form__input-name form__input-name" id="first_name" type="text" placeholder="Введите Ваше имя">
+                <label class="contacts-form__label-tel form__label-tel" for="first_tel">Номер&nbsp; телефона</label>
+                <input class="contacts-form__input-tel form__input-tel" id="first_tel" type="tel" placeholder="+375">
+                <label class="contacts-form__label-text form__label-text" for="first_text">Ваш вопрос</label>
+                <textarea class="contacts-form__textarea-text form__textarea-text" id="first_text" placeholder="Введите текст"></textarea> 
+            </div>
+
             <input class="contacts-form__submit form__submit button_primary button" type="submit" value="Отправить">
         </form>
     
         <div class="contacts-info">
             <h2 class="section-title contacts-info__section-title" data-aos="fade-up" data-aos-offset="40">Контакты</h2>
-            <div class="wrapper_contacts-info">
+            <div class="contacts-info__wrapper">
                 <div class="contacts-info__card">
                     <h3 class="contacts-info__card-title">Телефоны</h3>
                     <a class="contacts-info__card-text contacts-info__card-tel" href="tel:+375298887766">+375 29 888 77 66</a>
@@ -1074,6 +1077,38 @@
         </ul>
     </div>
 </footer>
+		<div class="modal">
+    <div class="modal__container" data-target="first">
+
+        <div class="modal-content">
+            <button class="modal__close-button button">
+                <svg class="svg">
+                    <use xlink:href="img/sprite.svg#modal__close-button"></use>
+                </svg>
+            </button>
+            <div class="modal__left-wrapper">
+                <h2 class="modal__title">Получить бесплатную консультацию</h2>
+                <p class="modal__text">
+                    Оставьте свои данные и наши менеджеры свяжутся с вами в течение часа
+                </p>
+            </div>
+
+            <form class="modal-form form" action="" enctype="multipart/form-data"  method="POST">
+                <div class="modal-form__wrapper">
+                    <label class="modal-form__label-name form__label-name" for="modal-first_name">Имя</label>
+                    <input class="modal-form__input-name form__input-name" id="modal-first_name" type="text" placeholder="Введите Ваше имя">
+                    <label class="modal-form__label-tel form__label-tel" for="modal-first_tel">Номер телефона</label>
+                    <input class="modal-form__input-tel form__input-tel" id="modal-first_tel" type="tel" placeholder="+375">
+                </div>
+                
+                <input class="modal-form__submit form__submit button_primary button" type="submit" value="Отправить">
+            </form>
+        </div>
+
+    </div>
+
+    
+</div> 
 		<button class="back-to-top-btn">
 			<svg class="svg">
                 <use xlink:href="img/sprite.svg#back-to-top-btn"></use>

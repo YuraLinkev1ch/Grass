@@ -4,20 +4,23 @@
             06
         </div>
 
-        <form class="contacts-form form">
+        <form class="contacts-form form" action="" enctype="multipart/form-data"  method="POST">
             <h2 class="contacts-form__title section-title">Остались вопросы?</h2>
-            <label class="contacts-form__label-name form__label-name" for="first_name">Имя</label>
-            <input class="contacts-form__input-name form__input-name" id="first_name" type="text" placeholder="Введите Ваше имя" required>
-            <label class="contacts-form__label-tel form__label-tel" for="first_tel">Номер&nbsp; телефона</label>
-            <input class="contacts-form__input-tel form__input-tel" id="first_tel" type="tel" placeholder="+375" required>
-            <label class="contacts-form__label-text form__label-text" for="first_text">Ваш вопрос</label>
-            <textarea class="contacts-form__textarea-text form__textarea-text" id="first_text" placeholder="Введите текст" required></textarea> 
+            <div class="contacts-form__wrapper">
+                <label class="contacts-form__label-name form__label-name" for="first_name">Имя</label>
+                <input class="contacts-form__input-name form__input-name" id="first_name" type="text" placeholder="Введите Ваше имя">
+                <label class="contacts-form__label-tel form__label-tel" for="first_tel">Номер&nbsp; телефона</label>
+                <input class="contacts-form__input-tel form__input-tel" id="first_tel" type="tel" placeholder="+375">
+                <label class="contacts-form__label-text form__label-text" for="first_text">Ваш вопрос</label>
+                <textarea class="contacts-form__textarea-text form__textarea-text" id="first_text" placeholder="Введите текст"></textarea> 
+            </div>
+
             <input class="contacts-form__submit form__submit button_primary button" type="submit" value="Отправить">
         </form>
     
         <div class="contacts-info">
             <h2 class="section-title contacts-info__section-title" data-aos="fade-up" data-aos-offset="40">Контакты</h2>
-            <div class="wrapper_contacts-info">
+            <div class="contacts-info__wrapper">
                 <div class="contacts-info__card">
                     <h3 class="contacts-info__card-title">Телефоны</h3>
                     <a class="contacts-info__card-text contacts-info__card-tel" href="tel:+375298887766">+375 29 888 77 66</a>

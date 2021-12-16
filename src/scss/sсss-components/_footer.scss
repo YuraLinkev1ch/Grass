@@ -7,12 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 85px 47px 87px;
+    padding: 84px 47px 87px;
     max-width: 1132px;
     color: $white-main;
 
     @include _1170 {
-        padding: vw(85) vw(47) vw(87);
+        padding: vw(84) vw(47) vw(87);
         max-width: vw(1132);
     }
 

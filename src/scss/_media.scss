@@ -139,7 +139,6 @@
 }
 
 .form__input-name {
-    margin-bottom: 39px;
     border: 1px solid $grey5;
     border-radius: 40px;
     padding: 11px 27px 12px;
@@ -177,7 +176,6 @@
     }
 
     @include _1440 {
-        margin-bottom: vw1440(39);
         border: vw1440(1) solid $grey5;
         border-radius: vw1440(40);
         padding: vw1440(11) vw1440(27) vw1440(12);
@@ -186,7 +184,6 @@
     }
 
     @include _768 {
-        margin-bottom: vw2(31);
         border: vw2(1) solid $grey5;
         border-radius: vw2(40);
         padding: vw2(11) vw2(27) vw2(12);
@@ -195,7 +192,6 @@
     }
 
     @include _375 {
-        margin-bottom: vmin(29);
         border: vmin(1) solid $grey5;
         border-radius: vmin(40);
         padding: vmin(11) vmin(27) vmin(12);
@@ -235,7 +231,6 @@
 }
 
 .form__input-tel {
-    margin-bottom: 39px;
     border: 1px solid $grey5;
     border-radius: 40px;
     padding: 11px 27px 12px;
@@ -273,7 +268,6 @@
     }
 
     @include _1440 {
-        margin-bottom: vw1440(39);
         border: vw1440(1) solid $grey5;
         border-radius: vw1440(40);
         padding: vw1440(11) vw1440(27) vw1440(12);
@@ -282,7 +276,6 @@
     }
 
     @include _768 {
-        margin-bottom: vw2(31);
         border: vw2(1) solid $grey5;
         border-radius: vw2(40);
         padding: vw2(11) vw2(27) vw2(12);
@@ -291,7 +284,6 @@
     }
 
     @include _375 {
-        margin-bottom: vmin(29);
         border: vmin(1) solid $grey5;
         border-radius: vmin(40);
         padding: vmin(11) vmin(27) vmin(12);
@@ -389,6 +381,23 @@
         border-radius: vmin(10);
         padding: vmin(11) vmin(27) vmin(12);
         font-size: vmin(16);
+        line-height: vmin(30);
+    }
+}
+
+.is-label-invalid {
+    @include _1170 {
+        font-size: vw(18);
+        line-height: vw(30);
+    }
+
+    @include _768 {
+        font-size: vw2(18);
+        line-height: vw2(30);
+    }
+
+    @include _375 {
+        font-size: vmin(18);
         line-height: vmin(30);
     }
 }

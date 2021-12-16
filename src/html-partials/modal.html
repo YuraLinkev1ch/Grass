@@ -1,0 +1,32 @@
+<div class="modal">
+    <div class="modal__container" data-target="first">
+
+        <div class="modal-content">
+            <button class="modal__close-button button">
+                <svg class="svg">
+                    <use xlink:href="img/sprite.svg#modal__close-button"></use>
+                </svg>
+            </button>
+            <div class="modal__left-wrapper">
+                <h2 class="modal__title">Получить бесплатную консультацию</h2>
+                <p class="modal__text">
+                    Оставьте свои данные и наши менеджеры свяжутся с вами в течение часа
+                </p>
+            </div>
+
+            <form class="modal-form form" action="" enctype="multipart/form-data"  method="POST">
+                <div class="modal-form__wrapper">
+                    <label class="modal-form__label-name form__label-name" for="modal-first_name">Имя</label>
+                    <input class="modal-form__input-name form__input-name" id="modal-first_name" type="text" placeholder="Введите Ваше имя">
+                    <label class="modal-form__label-tel form__label-tel" for="modal-first_tel">Номер телефона</label>
+                    <input class="modal-form__input-tel form__input-tel" id="modal-first_tel" type="tel" placeholder="+375">
+                </div>
+                
+                <input class="modal-form__submit form__submit button_primary button" type="submit" value="Отправить">
+            </form>
+        </div>
+
+    </div>
+
+    
+</div> 
