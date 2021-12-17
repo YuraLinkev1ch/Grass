@@ -420,6 +420,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0 4.01709vw; }
   @media (max-width: 768px) {
     .container_page-header {
@@ -438,29 +441,6 @@ body {
       width: 8.53333vmin;
       height: 5.86667vmin;
       background-color: transparent; } }
-
-.page-header__theme-switch {
-  margin-right: 35px;
-  margin-left: auto;
-  border: 0;
-  width: 40px;
-  height: 40px;
-  background: url("./../../img/day.svg") no-repeat center;
-  background-size: contain; }
-  @media (max-width: 1170px) {
-    .page-header__theme-switch {
-      margin-right: 2.99145vw;
-      width: 3.4188vw;
-      height: 3.4188vw; } }
-  @media (max-width: 768px) {
-    .page-header__theme-switch {
-      width: 5.20833vw;
-      height: 5.20833vw; } }
-  @media (max-width: 375px) {
-    .page-header__theme-switch {
-      margin-left: auto;
-      width: 6.66667vmin;
-      height: 6.66667vmin; } }
 
 .nav {
   width: 100%;

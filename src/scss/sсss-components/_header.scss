@@ -10,6 +10,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 vw(47);
 
     @include _768 {
@@ -31,33 +32,6 @@
         width: vmin(32);
         height: vmin(22);
         background-color: transparent;
-    }
-}
-
-.page-header__theme-switch {
-    margin-right: 35px;
-    margin-left: auto;
-    border: 0;
-    width: 40px;
-    height: 40px;
-    background: url("./../../img/day.svg") no-repeat center;
-    background-size: contain;
-
-    @include _1170 {
-        margin-right: vw(35);
-        width: vw(40);
-        height: vw(40);
-    }
-
-    @include _768 {
-        width: vw2(40);
-        height: vw2(40);
-    }
-
-    @include _375 {
-        margin-left: auto;
-        width: vmin(25);
-        height: vmin(25);
     }
 }
 
