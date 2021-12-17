@@ -169,12 +169,6 @@
         }
 	}
 
-    &:hover,
-    &:active,
-    &:focus {
-        outline: 1px solid $grey5;
-    }
-
     @include _1440 {
         border: vw1440(1) solid $grey5;
         border-radius: vw1440(40);
@@ -260,12 +254,6 @@
             line-height: vmin(30);
         }
 	}
-
-    &:hover,
-    &:active,
-    &:focus {
-        outline: 1px solid $grey5;
-    }
 
     @include _1440 {
         border: vw1440(1) solid $grey5;
@@ -353,12 +341,6 @@
             line-height: vmin(30);
         }
 	}
-
-    &:hover,
-    &:active,
-    &:focus {
-        outline: 1px solid $grey5;
-    }
 
     @include _1440 {
         border: vw1440(1) solid $grey5;

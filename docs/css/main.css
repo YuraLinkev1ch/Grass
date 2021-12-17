@@ -105,6 +105,15 @@ body {
   right: 20px;
   bottom: 20px;
   z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border: 0;
   border-radius: 2px;
   width: 80px;
@@ -285,7 +294,9 @@ body {
     line-height: 30px;
     color: #ABABAB; }
   .form__input-name:hover, .form__input-name:active, .form__input-name:focus {
-    outline: 1px solid #ABABAB; }
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 1px #ABABAB;
+    box-shadow: 0 0 0 1px #ABABAB; }
 
 .form__label-tel {
   padding-bottom: 11px;
@@ -330,7 +341,8 @@ body {
     line-height: 30px;
     color: #ABABAB; }
   .form__input-tel:hover, .form__input-tel:active, .form__input-tel:focus {
-    outline: 1px solid #ABABAB; }
+    -webkit-box-shadow: 0 0 0 1px #ABABAB;
+    box-shadow: 0 0 0 1px #ABABAB; }
 
 .form__label-text {
   padding-bottom: 11px;
@@ -375,10 +387,12 @@ body {
     line-height: 30px;
     color: #ABABAB; }
   .form__textarea-text:hover, .form__textarea-text:active, .form__textarea-text:focus {
-    outline: 1px solid #ABABAB; }
+    -webkit-box-shadow: 0 0 0 1px #ABABAB;
+    box-shadow: 0 0 0 1px #ABABAB; }
 
 .is-invalid {
-  outline: 1px solid #EC5210; }
+  -webkit-box-shadow: 0 0 0 1px #EC5210;
+  box-shadow: 0 0 0 1px #EC5210; }
 
 .is-label-invalid {
   padding-bottom: 20px;
@@ -4110,8 +4124,6 @@ body {
       .form__input-name::placeholder {
         font-size: 4.26667vmin;
         line-height: 8vmin; } }
-  .form__input-name:hover, .form__input-name:active, .form__input-name:focus {
-    outline: 1px solid #ABABAB; }
   @media (max-width: 1440px) {
     .form__input-name {
       border: 0.06944vw solid #ABABAB;
@@ -4241,8 +4253,6 @@ body {
       .form__input-tel::placeholder {
         font-size: 4.26667vmin;
         line-height: 8vmin; } }
-  .form__input-tel:hover, .form__input-tel:active, .form__input-tel:focus {
-    outline: 1px solid #ABABAB; }
   @media (max-width: 1440px) {
     .form__input-tel {
       border: 0.06944vw solid #ABABAB;
@@ -4373,8 +4383,6 @@ body {
       .form__textarea-text::placeholder {
         font-size: 4.26667vmin;
         line-height: 8vmin; } }
-  .form__textarea-text:hover, .form__textarea-text:active, .form__textarea-text:focus {
-    outline: 1px solid #ABABAB; }
   @media (max-width: 1440px) {
     .form__textarea-text {
       border: 0.06944vw solid #ABABAB;
