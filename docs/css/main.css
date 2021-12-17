@@ -1284,12 +1284,9 @@ body {
     .tab-content.tab-active {
       display: none; } }
 
-.tab-content__left-part {
-  position: relative;
-  z-index: 30; }
-  @media (max-width: 768px) {
-    .tab-content__left-part {
-      padding-left: 4.42708vw; } }
+@media (max-width: 768px) {
+  .tab-content__left-part {
+    padding-left: 4.42708vw; } }
 
 .tab-content__title {
   margin: 0;
@@ -1310,6 +1307,8 @@ body {
       display: none; } }
 
 .tab-content__desc {
+  position: relative;
+  z-index: 30;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1327,6 +1326,8 @@ body {
       line-height: 2.86458vw; } }
 
 .tab-content__button {
+  position: relative;
+  z-index: 30;
   margin-top: 28px;
   padding: 17px 60px; }
   @media (max-width: 1170px) {

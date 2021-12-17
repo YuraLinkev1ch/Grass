@@ -231,9 +231,6 @@
 }
 
 .tab-content__left-part {
-    position: relative;
-    z-index: 30;
-
     @include _768 {
         padding-left: vw2(34);
     }
@@ -261,6 +258,8 @@
 }
 
 .tab-content__desc {
+    position: relative;
+    z-index: 30;
     margin: 0;
     font-weight: 400;
     font-size: 16px;
@@ -281,6 +280,8 @@
 }
 
 .tab-content__button {
+    position: relative;
+    z-index: 30;
     margin-top: 28px;
     padding: 17px 60px;
 
