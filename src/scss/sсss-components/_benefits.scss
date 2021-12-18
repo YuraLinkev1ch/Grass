@@ -289,7 +289,7 @@
     display: none;
 
     @include _375 {
-        display: flex;
+        display: grid;
         margin: 0 auto;
         padding-top: vmin(25);
         width: vmin(29);
@@ -298,6 +298,7 @@
 
 .benefits__arrow-btn {
     @include _375 {
+        display: grid;
         border: 0;
         width: vmin(29);
         height: vmin(10);

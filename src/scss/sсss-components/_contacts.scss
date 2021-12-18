@@ -329,13 +329,15 @@
     @include _768 {
         flex-direction: row;
         padding-top: 0;
-        width: vw2(671);
+        padding-right: vw2(1);
+        width: vw2(676);
         min-height: auto;
     }
 
     @include _375 {
         flex-direction: column;
         align-self: flex-start;
+        padding-right: 0;
         padding-left: vmin(24);
         width: auto;
     }
@@ -351,7 +353,7 @@
         @include _768 {
             align-items: center;
             justify-content: flex-start;
-            width: vw2(125);
+            width: vw2(135);
         }
 
         @include _375 {
@@ -368,12 +370,14 @@
             align-items: center;
             justify-content: flex-start;
             order: 3;
+            padding-right: vw2(2);
             width: vw2(158);
         }
 
         @include _375 {
             align-items: flex-start;
             order: initial;
+            padding-right: 0;
             padding-bottom: vmin(30);
             padding-left: vmin(12);
             width: auto;
@@ -385,12 +389,14 @@
             align-items: center;
             justify-content: flex-start;
             order: 2;
-            width: vw2(120);
+            margin-left: vw2(-3);
+            width: vw2(130);
         }
 
         @include _375 {
             align-items: flex-start;
             order: initial;
+            margin-left: 0;
             padding-bottom: vmin(30);
             padding-left: vmin(12);
             width: auto;

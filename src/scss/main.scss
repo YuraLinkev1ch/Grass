@@ -29,7 +29,7 @@ body {
     right: 20px;
     bottom: 20px;
     z-index: 9;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     border: 0;
@@ -44,7 +44,7 @@ body {
 
     opacity: 0;
     visibility: hidden;
-    transform: translateX(50px);
+    transform: translateX(150px);
     transition: 0.2s;
 
     cursor: pointer;
@@ -207,6 +207,7 @@ body {
 }
 
 .form__input-name {
+    -webkit-appearance: none;
     margin-bottom: 39px;
     border: 1px solid $grey5;
     border-radius: 40px;
@@ -226,7 +227,6 @@ body {
     &:hover,
     &:active,
     &:focus {
-        outline: 0;
         box-shadow: 0 0 0 1px $grey5;
     }
 }
@@ -241,6 +241,7 @@ body {
 }
 
 .form__input-tel {
+    -webkit-appearance: none;
     margin-bottom: 39px;
     border: 1px solid $grey5;
     border-radius: 40px;
@@ -274,6 +275,7 @@ body {
 }
 
 .form__textarea-text {
+    -webkit-appearance: none;
     border: 1px solid $grey5;
     border-radius: 10px;
     padding: 11px 27px 12px;
