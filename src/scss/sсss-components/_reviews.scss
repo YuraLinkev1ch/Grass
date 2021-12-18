@@ -1,13 +1,20 @@
 .reviews {
     width: 100%;
-    background:
+
+    @include light {
+        background:
         image-set(
             url("./../../img/bg-decoration.png") 1x,
             url("./../../img/bg-decoration@2x.png") 2x
             )
-    no-repeat;
-    background-position: right;
-    background-size: contain;
+        no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+
+    @include dark {
+        background: $background-dark;
+    }
 
     @include _375 {
         background: none;
@@ -43,6 +50,14 @@
     padding-top: 97px;
     padding-bottom: 37px;
 
+    @include light {
+        color: $black-main;
+    }
+
+    @include dark {
+        color: $grey-main;
+    }
+
     @include _1170 {
         padding-top: vw(97);
         padding-bottom: vw(37);
@@ -71,6 +86,24 @@
         @include _1170 {
             width: vw(0.5);
             height: vw(200);
+        }
+    }
+
+    @include dark {
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: inline-block;
+            width: 200px;
+            height: 0.5px;
+            background-color: $yellow-main;
+
+            @include _1170 {
+                width: vw(200);
+                height: vw(0.5);
+            }
         }
     }
 
@@ -219,8 +252,6 @@
     padding: 30px 43px 19px 49px;
     width: 428px;
     min-height: 201px;
-    box-shadow: 1px -1px 5px rgba(29, 15, 3, 0.1), -4px 6px 30px rgba(29, 15, 3, 0.15);
-    background-color: $white-main;
 
     &::after {
         content: "“";
@@ -248,6 +279,16 @@
         @include _375 {
             content: none;
         }
+    }
+
+    @include light {
+        box-shadow: 1px -1px 5px rgba(29, 15, 3, 0.1), -4px 6px 30px rgba(29, 15, 3, 0.15);
+        background-color: $white-main;
+    }
+
+    @include dark {
+        box-shadow: 0 0 0 1px $yellow-main;
+        background-color: $background-dark;
     }
 
     @include _1440 {
@@ -318,7 +359,14 @@
     padding-top: 9px;
     font-weight: 400;
     font-size: 16px;
-    color: $grey3;
+
+    @include light {
+        color: $grey3;
+    }
+
+    @include dark {
+        color: $grey-main;
+    }
 
     @include _1440 {
         padding-top: vw1440(9);
@@ -343,7 +391,14 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    color: $grey4;
+
+    @include light {
+        color: $grey4;
+    }
+
+    @include dark {
+        color: $grey-main;
+    }
 
     @include _1440 {
         font-size: vw1440(16);

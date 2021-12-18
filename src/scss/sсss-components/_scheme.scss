@@ -1,19 +1,26 @@
 .scheme {
     width: 100%;
-    background:
+
+    @include light {
+        background:
         image-set(
             url("./../../img/bg-decoration.png") 1x,
             url("./../../img/bg-decoration@2x.png") 2x
             )
-    no-repeat;
-    background-position: left;
-    background-size: 55% 100%;
-    background-color: $grey2;
-    background-blend-mode: multiply;
+        no-repeat;
+        background-position: left;
+        background-size: 55% 100%;
+        background-color: $grey2;
+        background-blend-mode: multiply;
 
-    @include _768 {
+        @include _768 {
         background-position: center;
         background-size: contain;
+        }
+    }
+
+    @include dark {
+        background: $background-dark;
     }
 }
 
@@ -71,6 +78,14 @@
 .scheme__section-title {
     max-width: 415px;
     text-align: right;
+
+    @include light {
+        color: $black-main;
+    }
+
+    @include dark {
+        color: $grey-main;
+    }
 
     @include _1170 {
         max-width: vw(415);
@@ -405,7 +420,14 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 29.11px;
-    color: $black-main;
+
+    @include light {
+        color: $black-main;
+    }
+
+    @include dark {
+        color: $grey-main;
+    }
 
     @include _1440 {
         padding-right: vw1440(1);
@@ -507,7 +529,14 @@
     font-size: 16px;
     line-height: 30px;
     text-align: center;
-    color: rgba($black-main, 0.7);
+
+    @include light {
+        color: rgba($black-main, 0.7);
+    }
+
+    @include dark {
+        color: $grey-main;
+    }
 
     @include _1440 {
         font-size: vw1440(16);

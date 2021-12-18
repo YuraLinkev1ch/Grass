@@ -184,6 +184,14 @@
 	font-size: 60px;
 	line-height: 60px;
 
+	@include light {
+        color: $white-main;
+    }
+
+    @include dark {
+        color: $black-main;
+    }
+
 	@include _1440 {
 		padding-bottom: vw1440(16);
 		font-size: vw1440(60);
@@ -206,6 +214,14 @@
 	max-width: 330px;
 	font-size: 20px;
 	line-height: 30px;
+
+	@include light {
+        color: $white-main;
+    }
+
+    @include dark {
+        color: $black-main;
+    }
 
 	@include _1440 {
 		max-width: vw1440(330);
@@ -234,6 +250,14 @@
 	flex-direction: column;
 	padding: 145px 50px 41px 45px;
 	background: $white-main;
+
+	@include light {
+		background: $white-main;
+	}
+
+	@include dark {
+	    background: $background-dark;
+	}
 
 	@include _1440 {
 		padding: vw1440(145) vw1440(50) vw1440(41) vw1440(45);

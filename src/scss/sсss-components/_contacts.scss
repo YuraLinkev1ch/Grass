@@ -1,9 +1,16 @@
 .contacts {
     width: 100%;
-    background-color: $grey2;
 
-    @include _768 {
+    @include light {
+        background-color: $grey2;
+
+        @include _768 {
         background-color: $white-main;
+        }
+    }
+
+    @include dark {
+        background: $background-dark;
     }
 
     @include _375 {
@@ -61,6 +68,24 @@
         }
     }
 
+    @include dark {
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            width: 200px;
+            height: 0.5px;
+            background-color: $yellow-main;
+
+            @include _1440 {
+                width: vw1440(200);
+                height: vw1440(0.5);
+            }
+        }
+    }
+
     @include _1440 {
         padding-top: vw1440(40);
         padding-left: vw1440(30);
@@ -87,6 +112,10 @@
 
     @include _375 {
         padding: vmin(20) vmin(15) vmin(41);
+    }
+
+    @include dark {
+        background-color: $background-dark;
     }
 }
 
@@ -132,6 +161,14 @@
         grid-column: 1 / 3;
         padding-bottom: vw2(36);
         padding-left: vw2(22);
+
+        @include light {
+            color: $black-main;
+        }
+    
+        @include dark {
+            color: $grey-main;
+        }
     }
 
     @include _375 {
@@ -294,6 +331,14 @@
         }
     }
 
+    @include light {
+        color: $black-main;
+    }
+
+    @include dark {
+        color: $grey-main;
+    }
+
     @include _1440 {
         padding-bottom: vw1440(13);
         padding-left: vw1440(7);
@@ -438,6 +483,14 @@
 .contacts-info__card-text {
     font-size: 16px;
     line-height: 19px;
+
+    @include light {
+        color: $black-main;
+    }
+
+    @include dark {
+        color: $grey-main;
+    }
 
     @include _1440 {
         font-size: vw1440(16);

@@ -41,16 +41,18 @@ body {
     color: $white-main;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background: transparent;
-
     opacity: 0;
     visibility: hidden;
     transform: translateX(150px);
     transition: 0.2s;
-
     cursor: pointer;
 
     &:hover {
         opacity: 1;
+    }
+
+    @include dark {
+        filter: invert(1);
     }
 }
 
@@ -58,6 +60,10 @@ body {
     opacity: 0.5;
     visibility: visible;
     transform: translateX(0);
+
+    @include dark {
+        opacity: 0.5;
+    }
 }
 
 /* back-to-top-button-end */
@@ -132,7 +138,6 @@ body {
     font-weight: 400;
     font-size: 70px;
     line-height: 70px;
-    color: $black-main;
 }
 
 .section-number {
@@ -229,6 +234,16 @@ body {
     &:focus {
         box-shadow: 0 0 0 1px $grey5;
     }
+
+    @include light {
+        color: $black-main;
+        background-color: $grey2;
+    }
+
+    @include dark {
+        color: $grey-main;
+        background-color: $background-dark;
+    }
 }
 
 .form__label-tel {
@@ -248,8 +263,6 @@ body {
     padding: 11px 27px 12px;
     font-size: 18px;
     line-height: 30px;
-    color: $black-main;
-    background-color: $grey2;
 
     &::placeholder {
         font-style: italic;
@@ -262,6 +275,16 @@ body {
     &:active,
     &:focus {
         box-shadow: 0 0 0 1px $grey5;
+    }
+
+    @include light {
+        color: $black-main;
+        background-color: $grey2;
+    }
+
+    @include dark {
+        color: $grey-main;
+        background-color: $background-dark;
     }
 }
 
@@ -296,6 +319,16 @@ body {
     &:active,
     &:focus {
         box-shadow: 0 0 0 1px $grey5;
+    }
+
+    @include light {
+        color: $black-main;
+        background-color: $grey2;
+    }
+
+    @include dark {
+        color: $grey-main;
+        background-color: $background-dark;
     }
 }
 
