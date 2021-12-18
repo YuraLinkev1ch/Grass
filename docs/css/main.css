@@ -4418,6 +4418,101 @@ body {
       margin-bottom: 7.73333vmin; } }
 
 /*  modal-form-end */
+.designer {
+  border-top: 1px solid #EDC311;
+  width: 100%;
+  background-color: #0E1720; }
+
+.container_designer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 25px 0; }
+  @media (max-width: 1170px) {
+    .container_designer {
+      padding: 2.13675vw 0; } }
+  @media (max-width: 768px) {
+    .container_designer {
+      padding: 3.25521vw 0; } }
+  @media (max-width: 375px) {
+    .container_designer {
+      padding: 6.66667vmin 0; } }
+
+.designer__section-title {
+  padding-bottom: 20px;
+  font-size: 25px !important;
+  text-align: center;
+  color: #FFF; }
+  @media (max-width: 1170px) {
+    .designer__section-title {
+      padding-bottom: 1.7094vw;
+      font-size: 2.13675vw !important; } }
+  @media (max-width: 768px) {
+    .designer__section-title {
+      padding-bottom: 2.60417vw;
+      font-size: 3.25521vw !important; } }
+  @media (max-width: 375px) {
+    .designer__section-title {
+      padding-bottom: 5.33333vmin;
+      font-size: 6.66667vmin !important; } }
+
+.section-title_yellow {
+  color: #EDC311; }
+
+.designer__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 250px; }
+  @media (max-width: 1170px) {
+    .designer__social-links {
+      width: 12.82051vw; } }
+  @media (max-width: 768px) {
+    .designer__social-links {
+      width: 19.53125vw; } }
+  @media (max-width: 375px) {
+    .designer__social-links {
+      width: 40vmin; } }
+
+.designer__social-links-item {
+  list-style: none; }
+
+.designer__socilal-link {
+  display: inline-block;
+  width: 55px;
+  height: 55px; }
+  @media (max-width: 1170px) {
+    .designer__socilal-link {
+      width: 2.13675vw;
+      height: 2.13675vw; } }
+  @media (max-width: 768px) {
+    .designer__socilal-link {
+      width: 3.25521vw;
+      height: 3.25521vw; } }
+  @media (max-width: 375px) {
+    .designer__socilal-link {
+      width: 6.66667vmin;
+      height: 6.66667vmin; } }
+
+.social-link-behance {
+  fill: #0057FF; }
+
+.social-link-linkedin {
+  fill: #0A66C2; }
+
+.social-link-telegram {
+  fill: #32AFED; }
+
 @media (max-width: 1170px) {
   .logo {
     width: 6.92308vw;
