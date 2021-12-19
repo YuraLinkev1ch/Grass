@@ -5,8 +5,8 @@
     @include light {
         background:
         image-set(
-            url("./../../img/hero@2x.jpg") 2x,
-            url("./../../img/hero.jpg") 1x
+            url("../img/hero@2x.jpg") 2x,
+            url("../img/hero.jpg") 1x
         )
         center no-repeat;
         background-size: cover;
@@ -18,8 +18,8 @@
         background:
         linear-gradient(to top, #0E1720 0%, rgba(14, 23, 32, 0.7143) 10.49%, rgba(14, 23, 32, 0) 100%),
         image-set(
-            url("./../../img/hero@2x.jpg") 2x,
-            url("./../../img/hero.jpg") 1x,
+            url("../img/hero@2x.jpg") 2x,
+            url("../img/hero.jpg") 1x,
         )
         center no-repeat;
         background-size: cover;

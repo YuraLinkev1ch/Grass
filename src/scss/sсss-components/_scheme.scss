@@ -4,8 +4,8 @@
     @include light {
         background:
         image-set(
-            url("./../../img/bg-decoration.png") 1x,
-            url("./../../img/bg-decoration@2x.png") 2x
+            url("../img/bg-decoration.png") 1x,
+            url("../img/bg-decoration@2x.png") 2x
             )
         no-repeat;
         background-position: left;
@@ -114,7 +114,7 @@
     padding: 0 73px  207px 75px;
     min-height: 347px;
     max-width: 1287px;
-    background: url("./../../img/bg-dec-lines.svg") no-repeat;
+    background: url("../img/bg-dec-lines.svg") no-repeat;
     background-position: 0 5%;
     background-size: contain;
 
@@ -129,7 +129,7 @@
         padding: 0 vw2(105) vw2(38) vw2(121);
         min-height: vw2(488);
         max-width: vw2(543);
-        background: url("./../../img/bg-dec-lines-vertical.svg") no-repeat;
+        background: url("../img/bg-dec-lines-vertical.svg") no-repeat;
         background-position: 50% -3%;
         background-size: vw2(51.96) vw2(448.96);
     }
@@ -139,7 +139,7 @@
         padding: vmin(25) 0 0 vmin(55);
         min-height: vmin(632);
         max-width: 100%;
-        background: url("./../../img/bg-dec-lines-vertical.svg") no-repeat;
+        background: url("../img/bg-dec-lines-vertical.svg") no-repeat;
         background-position: 6% 5%;
         background-size: vmin(74) vmin(642);
     }
