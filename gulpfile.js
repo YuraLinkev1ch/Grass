@@ -61,7 +61,7 @@ const styles = () => {
             overrideBrowserslist: ['last 2 versions'],
             cascade: false,
             }))
-        .pipe(gulpif(isProd, cleanCSS({ level: 2 })))
+        .pipe(gulpif(isProd, cleanCSS({ level: 0 })))
         .pipe(gulpif(!isProd, sourcemaps.write('.')))
         .pipe(dest('./docs/css/'))
         .pipe(browserSync.stream());
@@ -220,7 +220,7 @@ const toProd = (done) => {
 
 exports.default = series(clean, htmlInclude, scripts, styles, fonts, resources, images, svgSprites, watchFiles);
 
-exports.build = series(toProd, fonts, clean, htmlInclude, scripts, styles, fonts, resources, images, svgSprites, htmlMinify/* , tinypng */);
+exports.build = series(toProd, fonts, clean, htmlInclude, scripts, styles, fonts, resources, images, svgSprites, htmlMinify, tinypng);
 
 exports.w3c = series(w3cHtmlValidator);
 
