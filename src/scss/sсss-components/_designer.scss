@@ -62,8 +62,8 @@
     }
 
     @include _375 {
-        padding-left: vmin(25);
         padding-bottom: vmin(10);
+        padding-left: vmin(25);
         width: vmin(150);
     }
 }
