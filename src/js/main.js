@@ -23,10 +23,10 @@ let flag = 0;
 
 window.addEventListener('scroll', function() {
     let scrollY = window.scrollY;
-    console.log(scrollY);
+    /* console.log(scrollY); */
 
     let mapOffset = this.document.querySelector('#contacts-map').offsetTop;
-    console.log(mapOffset);
+    /* console.log(mapOffset); */
 
     if((scrollY >= mapOffset - 1000) && (flag == 0)) {
         let center = [53.944802, 27.351446];
