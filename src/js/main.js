@@ -27,7 +27,7 @@ function init() {
 	});
 
     let myIcon = ymaps.templateLayoutFactory.createClass('<div class="yandex-map__text">' + 
-        '{{ properties.iconCaption }}' + '</div>  <img class="yandex-map__image" src="../img/marker.svg">');
+        '{{ properties.iconCaption }}' + '</div>  <img class="yandex-map__image" src="img/marker.svg">');
 
     let placemark = new ymaps.Placemark(center, {
         iconCaption: 'Садовая улица, 23',
