@@ -3,6 +3,14 @@
 @import "functions";
 @import "fonts";
 
+/* hide-alt-img-start */
+
+img:not([src]):not([srcset]) {
+    visibility: hidden;
+}
+
+/* hide-alt-img-end */
+
 /* * {
     outline: 1px solid #000;
 } */
