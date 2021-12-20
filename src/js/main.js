@@ -18,34 +18,52 @@ portfolioArrowBtn.addEventListener('click', function() {
 
 /* yandex-maps-config-start */
 
-let center = [53.944802, 27.351446];
+let flag = 0;
 
-function init() {
-	let map = new ymaps.Map('contacts-map', {
-		center: center,
-		zoom: 16
-	});
 
-    let myIcon = ymaps.templateLayoutFactory.createClass('<div class="yandex-map__text">' + 
-        '{{ properties.iconCaption }}' + '</div>  <img class="yandex-map__image" src="img/marker.svg">');
+window.addEventListener('scroll', function() {
+    let scrollY = window.scrollY;
+    console.log(scrollY);
 
-    let placemark = new ymaps.Placemark(center, {
-        iconCaption: 'Садовая улица, 23',
-    }, {
-        iconLayout: myIcon,
-	});
+    let mapOffset = this.document.querySelector('#contacts-map').offsetTop;
+    console.log(mapOffset);
 
-	map.controls.remove('geolocationControl'); 
-    map.controls.remove('searchControl'); 
-    map.controls.remove('trafficControl'); 
-    map.controls.remove('typeSelector'); 
-    map.controls.remove('fullscreenControl'); 
-    map.controls.remove('zoomControl'); 
-    map.controls.remove('rulerControl'); 
-    map.behaviors.disable(['scrollZoom']); 
-    map.geoObjects.add(placemark);
-}
+    if((scrollY >= mapOffset - 1000) && (flag == 0)) {
+        let center = [53.944802, 27.351446];
 
-ymaps.ready(init);
+        function init() {
+            let map = new ymaps.Map('contacts-map', {
+                center: center,
+                zoom: 16
+            });
+
+            let myIcon = ymaps.templateLayoutFactory.createClass('<div class="yandex-map__text">' + 
+                '{{ properties.iconCaption }}' + '</div>  <img class="yandex-map__image" src="img/marker.svg">');
+
+            let placemark = new ymaps.Placemark(center, {
+                iconCaption: 'Садовая улица, 23',
+            }, {
+                iconLayout: myIcon,
+            });
+
+            map.controls.remove('geolocationControl'); 
+            map.controls.remove('searchControl'); 
+            map.controls.remove('trafficControl'); 
+            map.controls.remove('typeSelector'); 
+            map.controls.remove('fullscreenControl'); 
+            map.controls.remove('zoomControl'); 
+            map.controls.remove('rulerControl'); 
+            map.behaviors.disable(['scrollZoom']); 
+            map.geoObjects.add(placemark);
+        }
+
+        ymaps.ready(init);
+
+        flag = 1;
+    }
+});
+
+
+
 
 /* yandex-maps-config-end */
