@@ -220,7 +220,7 @@ const toProd = (done) => {
 
 exports.default = series(clean, htmlInclude, scripts, styles, fonts, resources, images, svgSprites, watchFiles);
 
-exports.build = series(toProd, fonts, clean, htmlInclude, scripts, styles, fonts, resources, images, svgSprites, htmlMinify/* , tinypng */);
+exports.build = series(toProd, fonts, clean, htmlInclude, scripts, styles, fonts, resources, images, svgSprites, htmlMinify, tinypng);
 
 exports.w3c = series(w3cHtmlValidator);
 
