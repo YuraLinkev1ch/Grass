@@ -13,6 +13,7 @@ https://yuralinkev1ch.github.io/Grass/
 - адаптивность по разные разрешения экранов с помощью vw
 
 Ссылки на макет:
+
 https://github.com/YuraLinkev1ch/Grass/blob/master/docs/img/landing1440px.png
 https://github.com/YuraLinkev1ch/Grass/blob/master/docs/img/landing768px.png
 https://github.com/YuraLinkev1ch/Grass/blob/master/docs/img/landing375px.png
